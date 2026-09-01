@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated/synthetic training images -- reproducible from
+# datasets/synthesis/build_dataset.py + synthesize_*.py given the source
+# crops and manifest.csv, so not worth tracking (thousands of small PNGs).
+datasets/synthesis/images/
+
+# Hand-drawn source character crops -- NOT reproducible (original manual
+# work), but git is a poor fit for thousands of small binary image files
+# regardless of irreplaceability. Back these up separately (cloud
+# storage / external drive) -- do not rely on this repo as their backup.
+datasets/aksara_sunda_full/
+datasets/aksara_sunda/
+datasets/rarangken_angka_collection/_backup_before_renormalize/
+datasets/rarangken_angka_collection/_backup_before_thinning/
+datasets/rarangken_angka_collection/worksheets/
+datasets/rarangken_angka_collection/_demo_*.png
+
+# Legacy/superseded baseline dataset images (manifest kept)
+training/baseline_data/images/
+
+# Model checkpoints -- large binary .pt files, regenerable by rerunning
+# training/train_crnn.py against the (locally available) image data.
+training/checkpoints/
+
+# TensorBoard event files and ad-hoc run logs -- ephemeral, regenerated
+# every run, not meaningful outside the machine that produced them.
+training/runs/
+training/*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

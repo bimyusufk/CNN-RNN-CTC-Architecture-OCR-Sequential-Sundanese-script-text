@@ -1,0 +1,8 @@
+torch
+numpy
+scipy
+opencv-python
+Pillow
+freetype-py
+uharfbuzz
+tensorboard
