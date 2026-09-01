@@ -1,0 +1,10 @@
+{
+ "width_mult": 0.5,
+ "n_params": 2678151,
+ "use_aux": true,
+ "best_epoch": 1,
+ "cer": 1.0,
+ "wer": 1.0,
+ "exact_match": 0.0,
+ "n": 243
+}

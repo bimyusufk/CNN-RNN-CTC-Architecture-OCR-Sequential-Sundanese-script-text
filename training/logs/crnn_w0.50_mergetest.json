@@ -1,0 +1,19 @@
+{
+ "width_mult": 0.5,
+ "n_params": 2678151,
+ "use_aux": true,
+ "aux_params": 2095081,
+ "history": [
+  {
+   "epoch": 1,
+   "ctc_loss": 5.273933824866709,
+   "aux_loss": 4.04944110338134,
+   "lr": 0.0004,
+   "cer": 1.0,
+   "wer": 1.0,
+   "exact_match": 0.0,
+   "n": 240,
+   "elapsed_s": 644.6144630908966
+  }
+ ]
+}
