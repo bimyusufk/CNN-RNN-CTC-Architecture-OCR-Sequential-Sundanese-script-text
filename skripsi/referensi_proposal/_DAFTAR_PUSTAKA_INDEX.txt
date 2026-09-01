@@ -1,0 +1,96 @@
+Indeks 23 referensi yang disitasi pada Proposal_SekuensialAksaraSunda_Bim_Yusuf_Karang.docx
+(urutan sama seperti daftar pustaka pada proposal)
+
+01_Adilazuarda_et_al_2025_NusaAksara.pdf
+   Adilazuarda et al. (2025) 'NusaAksara: a multimodal and multilingual benchmark for
+   preserving Indonesian indigenous scripts', ACL 2025.
+
+02_Agustiansyah_Fauzi_2025_JISTICS.pdf
+   Agustiansyah and Fauzi (2025) 'From local features to global context: comparing CNN
+   and transformer for Sundanese script classification', JISTICS 1(2), pp. 53-61.
+
+03_Bergstra_Bengio_2012_RandomSearch.pdf
+   Bergstra and Bengio (2012) 'Random search for hyper-parameter optimization', JMLR 13.
+
+04_Dehghani_et_al_2022_EfficiencyMisnomer.pdf
+   Dehghani et al. (2022) 'The efficiency misnomer', ICLR 2022.
+
+05_Dosovitskiy_et_al_2021_ViT.pdf
+   Dosovitskiy et al. (2021) 'An image is worth 16x16 words: transformers for image
+   recognition at scale', ICLR 2021.
+
+06_Graves_et_al_2006_CTC.pdf
+   Graves et al. (2006) 'Connectionist temporal classification', ICML, pp. 369-376.
+
+07_Gupta_Vedaldi_Zisserman_2016_SynthText.pdf
+   Gupta, Vedaldi and Zisserman (2016) 'Synthetic data for text localisation in
+   natural images', CVPR, pp. 2315-2324.
+
+08_He_et_al_2016_ResNet.pdf
+   He et al. (2016) 'Deep residual learning for image recognition', CVPR, pp. 770-778.
+
+09_Howard_et_al_2019_MobileNetV3.pdf
+   Howard et al. (2019) 'Searching for MobileNetV3', ICCV, pp. 1314-1324.
+
+10_Iandola_et_al_2016_SqueezeNet.pdf
+   Iandola et al. (2016) 'SqueezeNet: AlexNet-level accuracy with 50x fewer parameters
+   and <0.5MB model size', arXiv:1602.07360.
+
+11_Ioffe_Szegedy_2015_BatchNorm.pdf
+   Ioffe and Szegedy (2015) 'Batch normalization', ICML, pp. 448-456.
+
+12a_Jaderberg_et_al_2014_MJSynth.pdf
+   Jaderberg, Simonyan, Vedaldi and Zisserman (2014a) 'Synthetic data and artificial
+   neural networks for natural scene text recognition', arXiv:1406.2227.
+
+   >> 12b Jaderberg, Vedaldi and Zisserman (2014b) 'Deep features for text spotting',
+      ECCV 2014, pp. 512-528 -- TIDAK ADA PDF lokal. Ini sumber dataset ECCV2014 yang
+      dipakai pada jalur paper Q1 (lihat datasets/ECCV2014/ dan
+      references/icdar03_ch_benchmark_verified.md), belum pernah diunduh sebagai PDF
+      terpisah. Unduh manual dari Springer/DBLP jika perlu salinan untuk Drive.
+
+13_Li_et_al_2023_TrOCR.pdf
+   Li et al. (2023) 'TrOCR: transformer-based optical character recognition with
+   pre-trained models', AAAI 37(11), pp. 13094-13102.
+
+14_Loshchilov_Hutter_2017_SGDR.pdf
+   Loshchilov and Hutter (2017) 'SGDR: stochastic gradient descent with warm restarts',
+   ICLR 2017.
+
+15_Loshchilov_Hutter_2019_AdamW.pdf
+   Loshchilov and Hutter (2019) 'Decoupled weight decay regularization', ICLR 2019.
+
+16_Ma_et_al_2018_ShuffleNetV2.pdf
+   Ma, Zhang, Zheng and Sun (2018) 'ShuffleNet V2: practical guidelines for efficient
+   CNN architecture design', ECCV, pp. 122-138.
+
+17_Nadeau_Bengio_1999_GeneralizationError.pdf
+   Nadeau and Bengio (1999) 'Inference for the generalization error', NIPS 12, pp. 307-313.
+
+18_Sandler_et_al_2018_MobileNetV2.pdf
+   Sandler, Howard, Zhu, Zhmoginov and Chen (2018) 'MobileNetV2: inverted residuals and
+   linear bottlenecks', CVPR, pp. 4510-4520.
+
+19_Shahriar_2026_LightweightCNNs.pdf
+   Shahriar (2026) 'Do newer lightweight CNNs perform better under resource constraints?',
+   arXiv:2607.01984.
+
+20_Shi_Bai_Yao_2017_CRNN.pdf
+   Shi, Bai and Yao (2017) 'An end-to-end trainable neural network for image-based
+   sequence recognition and its application to scene text recognition', IEEE TPAMI 39(11).
+
+21_Shi_et_al_2016_RARE.pdf
+   Shi, Wang, Lyu, Yao and Bai (2016) 'Robust scene text recognition with automatic
+   rectification', CVPR, pp. 4168-4176.
+
+22_Tan_Le_2019_EfficientNet.pdf
+   Tan and Le (2019) 'EfficientNet: rethinking model scaling for convolutional neural
+   networks', ICML, pp. 6105-6114.
+
+23_Zhang_et_al_2026_PPOCRv6.pdf
+   Zhang, Wang, Lin, Zhang and Deng (2026) 'PP-OCRv6: from 1.5M to 34.5M parameters,
+   surpassing billion-scale VLMs on OCR tasks', arXiv:2606.13108.
+
+CATATAN: 23 dari 24 sitasi pada Daftar Pustaka proposal memiliki PDF lokal (folder ini).
+Satu sitasi (Jaderberg et al. 2014b, ECCV) tidak tersimpan sebagai PDF terpisah -- lihat
+catatan di atas.
