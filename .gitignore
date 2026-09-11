@@ -32,6 +32,28 @@ training/checkpoints/
 training/runs/
 training/*.log
 
+# Third-party font files used for font-rendered synthesis (Caringin,
+# Gede Pangrango: CC BY-NC-ND; others of unclear/community license) --
+# not ours to redistribute. See DATA_PIPELINE.md for download sources;
+# datasets/rarangken_angka_collection/fonts/NotoSansSundanese.ttf (OFL,
+# genuinely redistributable) is intentionally NOT covered by this rule.
+datasets/rarangken_angka_collection/fonts/font_synthesis/
+
+# corpus.db backup snapshots -- git itself is the recovery mechanism
+# once a change is committed; these were pre-commit manual safety copies.
+datasets/synthesis/*.bak
+
+# Ad-hoc visual validation renders (augmentation/jitter sanity checks) --
+# throwaway inspection images, not meaningful outside the session that
+# produced them.
+datasets/rarangken_angka_collection/jitter_test/
+
+# Test images of unknown/external provenance pasted in during OOD
+# generalization testing -- not ours to redistribute; see RESULTS.md /
+# CLASS_IMBALANCE_PLAN.md for the findings derived from them.
+/image.png
+/image copy.png
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
