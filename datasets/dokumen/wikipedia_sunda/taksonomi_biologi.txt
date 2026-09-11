@@ -1,0 +1,181 @@
+Taksonomi (biologi) nyaéta élmu pangaweruh anu maluruh ngeunaan tata ngaran papasingan (klasifikasi), sarta idéntifikasi organismeu dumasar kana kasarimbagan ciri-cirina. Dina sistem ieu, organismeu digolongkeun kana sababaraha tingkatan anu disebut taksa (tunggal: takson). 
+Organismeu  disusun sacara ngaruntuy (hirarki) ti mimiti tingkatan anu paling umum nepi ka anu paling spésifik.  Ku ayana ieu hirarki, unggal golongan taksonomi; grup tina pangkat nu tangtu bisa dikumpulkeun pikeun ngabentuk grup anu undakanna leuwih luhur sarta inklusif, sahingga nyiptakeun rundayan/hirarki taksonomi. Rundayan poko dina pamakéan modérn nyaéta:
+
+Domain
+Karajaan
+Filum (pikeun sato) atawa Divisi (pikeun tutuwuhan),
+Kelas,
+Ordo
+Kulawarga
+Génus
+Spésiés
+Ahli botani ti Swédia, Carl Linnaeus dianggap salaku anu mitembeyan dina  ngadegkeun sistem taksonomi nu aya kiwari, sakumaha anjeunna ngembangkeun sistem réngking nu katelah Linnaean taxonomy pikeun ngategorikeun  organismeu, sarta sistem tata ngaran binomial nomenklatur pikeun méré ngaran ilmiah ka mahluk hirup.
+Balukarna ayana kamajuan dina téori, data, sareng téknologi analitik sistematika biologis, sistem Linnaéan téh kiwari geus mekar jadi sistem klasifikasi biologis modérn, Ieu sistem anyar miboga tujuan pikeun nembongkeun hubungan évolusi di antara rupa-rupa organismeu, boh nu masih hirup boh anu geus tumpur.
+Wangenan (définisi) ngeunaan taksonomi téh mémang béda-béda gumantung kana sumberna. Sanajan kitu, dina prak-prakanna mah ieu élmu téh tetep museur kana tilu hal utama, nyaéta: konsép, tata ngaran, sarta papasingan (klasifikasi) golongan organismeu.
+
+
+== Harti taxonomi ==
+Wangenan définisi ngeunaan taksonomi téh mémang béda-béda gumantung kana sumberna. Sanajan kitu, dina prak-prakanna mah ieu élmu téh tetep museur kana tilu hal utama: konsép, tata ngaran, sarta papasingan ngaklasifikasikeun golongan organismeu. Salaku bahan babandingan, ieu di handap aya sababaraha wangenan panganyarna ngeunaan taksonom taksonomi saperti handap ieu:
+
+Téori sarta prakték dina ngagolongkeun individu kana tingkatan spésiés, nu tuluy disusun jadi kelompok anu leuwih gedé, sarta dibéré ngaran éta grup, sahingga ngahasilkeun klasifikasi anu jéntré.
+Hiji widang élmu (sarta komponén utama sistematika) anu ngawengku katerangan, idéntifikasi, tata ngaran, jeung klasifikasi
+Élmu klasifikasi, dina susunan organismeu biologi kana hiji klasifikasi.
+"Élmu klasifikasi sakumaha dilarapkeun ka organismeu hirup, kaasup élmu ngeunaan cara formasi spésiés, jsb."
+"Analisis karakteristik hiji organismeu pikeun tujuan klasifikasi"
+"Studi sistimatika filogéni pikeun nyadiakeun pola nu bisa ditarjamahkeun kana klasifikasi jeung ngaran widang taksonomi nu leuwih inklusif" (didaptarkeun salaku harti nu dipikahoyong tapi teu ilahar)
+Watesan anu rupa-rupa boh nempatkeun taksonomi salaku sub-wewengkon sistematika (harti 2), balikkeun éta hubungan (harti 6), atawa sigana nganggap dua istilah sinonim. Aya sababaraha kaayaan teu satuju naha nomenclature biologis dianggap bagian tina taksonomi (definisi 1 jeung 2), atawa bagian tina sistematika luar taksonomi. Salaku conto, harti 6 dipasangkeun jeung harti sistematika handap nu nempatkeun tata ngaran luar taksonomi:
+
+Sistimétika: "Ulikan ngeunaan idéntifikasi, taksonomi, jeung tata ngaran organisme, kaasup klasifikasi mahluk hirup nu patali jeung hubungan alam maranéhanana sarta ulikan ngeunaan variasi jeung évolusi taksa".
+Dina taun 1970, Michener  jeung nu lian. ngadéfinisikeun "biologi sistimatis" jeung  "taksonomi" (istilah anu mindeng bingung tur dipaké silih tukeur) patalina jeung nu séjénna saperti ieu di handap:
+
+sistimatis biologi (engkéna disebut saukur sistematika) nyaéta widang anu: (a) nyadiakeun ngaran ilmiah pikeun organismeu, (b) ngajelaskeun aranjeunna, (c) ngawétkeun koléksi aranjeunna, (d) nyadiakeun klasifikasi pikeun organismeu, konci pikeun idéntifikasi maranéhanana, sarta data ngeunaan sebaran maranéhanana, (é) nalungtik sajarah évolusionér maranéhna, jeung (f) tinimbangan adaptasi lingkungan maranéhanana. Ieu mangrupikeun kaayaan anu gaduh sajarah panjang anu dina taun-taun ayeuna parantos ngalaman ronjotan anu kasohor, utamana ngeunaan eusi téoritis. Bagian tina bahan téoritis aya hubunganana sareng daérah évolusionér (jéjér é sareng f di luhur), sésana patali utamana jeung masalah klasifikasi. Taksonomi nyaéta bagian tina Sistematika anu patali jeung jejer (a) nepi ka (d) di luhur.
+
+Sakabeh sét istilah kaasup taksonomi, biologi sistimatis, sistematika, klasifikasi ilmiah, klasifikasi biologis, jeung filogenetik sakapeung mibanda maksud anu papalimpang– sakapeung sarua, sakapeung beda saeutik, ngan sok pacorok. Harti anupang legana "taksonomi" dipaké didieu. Istilah ieu di tepangkeun dina taun 1813 ku de Candolle, dina milikna Théorie élémentaire de la botanique. John Lindley disadiakeun définisi awal sistematika dina taun 1830, sanajan manéhna nulis ngeunaan "sistematis botani" tinimbang ngagunakeun istilah "sistematika". Urang Éropa resep ngagunakeun istilah "sistematika" jeung "biosistematika" pikeun ulikan ngeunaan biodiversity sacara gembleng, sedengkeun Amérika Kalér leuwih remen ngagunakeun "taksonomi". Tapi, taksonomi, sareng hususna taksonomi alfa, langkung spésifikna idéntifikasi, déskripsi, sareng nami (nyaéta, nomenklatur/tata ngaran) organismeu. Sedengkeun "klasifikasi" museurkeun kana nempatkeun organismeu dina grup hirarki anu némbongkeun hubungan maranéhanana jeung organismeu séjén.
+
+
+=== Monograf jeung révisi taksonomi ===
+Hiji révisi taksonomi atawa résénsi taksonomi mangrupa pedaran  analisis ngeunaan pola variasi dina takson anu tinangtu. Analisis ieu tiasa dilaksanakeun dumasar kana kombinasi naon waé tina sababaraha jinis karakter anu sayogi, sapertos morfologis, anatomi, palinologis, biokimia sareng génetik. monograf atanapi révisi lengkep nyaéta révisi anu kompréhénsif keur takson pikeun inpormasi anu dipasihkeun dina waktos anu tangtu, sareng pikeun sakuliah  dunya. Révisi séjén (parsial) bisa diwatesan dina harti yén maranéhna ngan bisa ngagunakeun sababaraha sét karakter sadia atawa boga wates wengkuan husus. Révisi ngahasilkeun konformasi atanapi wawasan anyar dina hubungan antara subtaksa dina takson anu ditalungtik, nu bisa ngakibatkeun parobahan dina klasifikasi subtaxa ieu, idéntifikasi subtaxa anyar, atawa ngahiji tina subtaxa saméméhna.
+
+
+=== Aksara taksonomi ===
+Karakter taksonomi nyaéta mangrupa atribut taksonomi anu bisa dipaké pikeun méré bukti di mana hubungan (filogéni) antara taksa dipuguhkeun. Jinis karakter taksonomi ngawengku:
+
+
+=== Alfa jeung béta taksonomi ===
+
+Syaratna "taksonomi alfa" utamana dipaké pikeun ngarujuk kana disiplin tatacarana manggihan, ngajéntrékeun, jeung ngaranan taxana, spésiés utamana . Dina litelatur  saméméhna, istilah éta miboga harti anu béda, jeung produk panalungtikan nepi ka ahir abad ka-19.
+William Bertram Turrill ngawanohkeun istilah "taksonomi alfa" dina runtuyan makalah anu medal dina taun 1935 ogé 1937 di mana anjeunna ngaguar filsafat jeung nyawang  disiplin taksonomi dina mangsa nu baris datang.
+
+ ... 
+Aya kahayang anu beuki gedé diantara para ahli taksonomi pikeun nganggap masalahna dina panempo anu langkung lega, pikeun nalungtik kemungkinan gawé babarengan leuwih deukeut jeung cytological maranéhanana, koléga ékologis jeung genetika sarta pikeun ngaku yén sababaraha révisi atawa ékspansi, meureun alam drastis, tujuan jeung métode maranéhanana, bisa jadi desirable ... Turrill (1935) geus ngusulkeun yén bari narima taksonomi invaluable heubeul, dumasar kana struktur, jeung merenah ditunjuk "alfa", kasebut nyaéta dimungkinkeun pikeun sawangan urang  anu jauh taxonomy diwangun dina salega dasar fakta morfologis jeung fisiologis jéntré, jeung hiji nu "tempat kapanggih pikeun sakabéh data observasi jeung ékspérimén patali, sanajan teu langsung, kana konstitusi, kana konstitusi, asal, jeung kabiasaan spésiés jeung grup taksonomi séjén". Cita-cita tiasa, bisa disebutkeun, pernah jadi sagemblengna sadar. Aranjeunna ngagaduhan, anu mana, niléy hébat akting salaku stimulan permanén, jeung lamun urang boga sababaraha, malah samar, idéal hiji  "omega" taksonomi urang bisa maju saeutik handap alfabét Yunani. Sababaraha urang nyenangkeun diri sorangan ku mikir urang ayeuna groping dina taksonomi "béta".
+Turrill antukna sacara éksplisit ngaluarkeun tina alfa taksonomi sagala rupa wewengkon tina ulikan yén anjeunna kaasup kana taksonomi sakabéhna, kayaning ékologi, fisiologi, génétika, jeung sitologi. Anjeunna salajengna ngaluarkeun rekonstruksi filogenetik tina taksonomi alfa.
+
+Engké pangarang geus dipaké istilah dina hiji béda rasa, hartina wates spésiés (sanés subspésiés atawa taksa tina jajaran séjén), ngagunakeun naon waé téhnik investigative sadia, jeung kaasup téhnik komputasi atawa laboratorium canggih. Ku kituna, Ernst Mayr dina taun 1968 didefinisikeun "beta taxonomy" salaku klasifikasi pangkat leuwih luhur ti spésiés (jenis).Hiji  pamahaman biologis hartina tina variasi jeung tina nu évolusionér asal grup spésiés patali malah leuwih penting pikeun tahap kadua aktivitas taksonomi, diurutkeun spésiés kana grup baraya ("taxa") jeung susunan maranéhanana dina hirarki kategori luhur. Kagiatan ieu anu dimaksud klasifikasi istilah; Éta ogé disebut "taksonomi béta".
+
+
+=== Mikrotaksonomi jeung makrotaksonomi ===
+
+Kumaha spésiés kudu dihartikeun dina hiji grup husus organisme méré naék kana masalah praktis jeung téoritis anu disebut salaku masalah spésiés. Karya ilmiah mutuskeun kumaha nangtukeun spésiés geus disebut microtaxonomy. Ku éksténsi, makrotaksonomi nyaéta ulikan ngeunaan grup dina subgenus pangkat taksonomi nu leuwih luhur. atawa ngan saukur dina clades nu ngawengku leuwih ti hiji takson dianggap specie as, dinyatakeun dina istilah nomenklatur filogenetik.
+
+
+== Sajarah ==
+Sedengkeun sawatara pedaran ngeunaan taksonomi sajarah nyoba tanggal taksonomi ka peradaban kuna, usaha sabenerna ilmiah pikeun ngaklasifikasikeun organismeu teu lumangsung nepi ka abad ka-18, iwal mungkin Aristoteles, nu karya pituduh di taksonomi.  Karya-karya saméméhna utamana déskriptif sarta museur kana tatangkalan anu mangpaat dina tatanén atawa ubar. 
+Aya sababaraha tahap dina pamikiran ilmiah ieu. Taksonomi mimiti dumasar kana kritéria saayana, nu disebut "sistem jieunan", kaasup Linnaeus's Sistim klasifikasi seksual pikeun tutuwuhan (Linnaeus's 1735 classification of animals was entitled "Sistema Alam" ("the System of Nature"), implying yén manéhna, sahenteuna, percaya yén éta leuwih ti hiji "sistem jieunan"). 
+Kadieunakeun sumping sistem dumasar kana tinimbangan leuwih lengkep tina ciri taksa, disebut salaku "sistem alam", kayaning tina pamadegan de Jussieu (1789), de Candolle (1813) sarta Bentham and Hooker (1862–1863). Klasifikasi ieu ngajelaskeun pola émpiris sareng pra-évolusi dina pamikiran. 
+Publikasi tina Charles Darwin's On the Origin of Species (1859) ngabalukarkeun katerangan anyar pikeun klasifikasi, dumasar kana hubungan évolusionér. Ieu konsép filotik sistem, ti 1883 saterusna. Ieu  dumasar pamadegan Eichler (1883) sarta Engler (1886–1892). 
+Datangna tina cladistic metodologi dina 1970an ngarah kana klasifikasi dumasar kana hiji-hijina kritéria monofil, dirojong ku ayana synapomorphies. Ti saprak éta, dasar evidentiary geus dimekarkeun kalawan data ti genetik molekular nu keur sabagian complements tradisional Morfologi.
+
+
+=== Saméméh-Linnaean ===
+
+
+==== Ahli taksonomi mimiti ====
+Ngaran jeung klasifikasi lingkungan manusa kawasnamah dimimitian ku awal basa. Ngabédakeun tutuwuhan kana pepelakan matak weureu  sareng anu tiasa didahar tayalian integral pikeun kalumangsungan hirup tina masarakat manusa. Ilustrasi tutuwuhan ubar muncul dina lukisan témbok Mesir ti c. 1500 BC, nunjukkeun yén pamakéan spésiés béda anu dipikaharti sarta yén hiji taksonomi dasar aya dina tempat.
+
+
+==== Jaman Baheula ====
+
+Organismeu munggaran digolongkeun ku Aristoteles (Yunani, 384–322 BC) salila anjeunna maneuh di  Pulo Lesbos. Anjeunna ngagolongkeun mahluk dumasar bagian maranéhanana, atawa dina istilah modern atribut, kayaning hirup tina anakan, ngabogaan opat suku, endog, getih atawa panas awaka.[38]  Anjeunna ngabagi sakabeh mahluk hirup kana dua golongan: tutuwuhan jeung sasatoan.. He divided all living things into two groups: plants and animals. 
+Sawatara kelompokna sato, sapertos Anhaima (sato henteu mibanda getih, ditarjamahkeun salaku invertebrata) sarta Enhaima (sasatoan anu mibanda getih, kasarna téh sabangsaning  vertebrata), sakumaha ogé kawas grup sabangsaning  hiu jeung cetacean, anu ilahar dipaké.
+muridna  Theophrastus (Yunani, 370–285 BC) ngalaksanakeun tradisi ieu, mentioning sababaraha 500 tutuwuhan jeung kagunaan maranéhanana di na Historia Plantarum. Sababaraha tutuwuhan genera bisa disusud deui ka Theophrastus, sapertos Cornus, Crocus, sarta Narcissus.
+
+
+==== Abad Pertengahan ====
+Taksonomi dina Abad Pertengahan ieu sakitu legana dumasar kanaSistim Aristoteles, kalawan tambahan ngeunaan tatanan filosofis jeung existential mahluk. Ieu kalebet konsép sapertos éta ranté  sasatoan anu ageung tradisi ​​di Kulon skolastik, deui deriving pamustunganana ti Aristoteles.
+Sistim Aristotelian teu ngaklasifikasikeun tutuwuhan anapon sabangsaning supa, alatan kurangna mikroskop dina waktos éta. sakumaha gagasan na dumasar kana nyusun dunya lengkep dina hiji kontinum tunggal, sapertos  'scala naturae (tangga alam). Ieu, ogé, dibawa kana tinimbangan dina ranté gedé sasatoan. 
+Kamajuan anu dilakukeun ku élmuwan sapertos Procopius, Timotheus of Gaza, Demetrios Pepagomenos, ogé Thomas Aquinas. Pamikir abad pertengahan ngagunakeun categorizations filosofis jeung logis abstrak leuwih cocog kana filsafat abstrak batan taksonomi pragmatis..
+
+
+==== Renaissance jeung mimiti modern ====
+Dina mangsa  Renaissance atawa Jaman Pencerahan, categorizing organismeu janten langkung umum,
+jeung karya taksonomi jadi cukup ambisius pikeun ngaganti téks kuna. Ieu dipangaruhan ku ayana ngembangkeun lénsa optik canggih, nu ngidinan morfologi organismeu bisa diulik leuwih jéntré. 
+Salah sahiji pangarang pangheubeulna pikeun ngamangpaatkeun ieu téhnologi éta dokter ti Italia  Andrea Cesalpino (1519–1603), anu disebut  "the first taxonomist". Ieu hasil gawé anu onjoy  De Plantis diguar di taun 1583, sarta digambarkeun leuwih ti 1500 spésiés tutuwuhan.Dua kulawarga pepelakan ageung anu kiwari mimiti dikenal sarta dianggo nepi ka ayeuna : Asteraceae jeung Brassicaceae. 
+Dina abad ka  17 John Ray (Inggris, 1627–1705) nulis  loba karya taksonomi penting. Bisa disebut hasil gawé anu pang gedéna tayalian Methodus Plantarum Nova (1682), dimana anjeuna ngaguar lewih ti  18,000 spésiés tutuwuhan. Dina waktos éta, meureun moal aya deui hasil ti ahli taksonomi anu pang rumitna, nalika anjeuna ngagolongkeun taksana dina loba  karakter gabungan.
+Karya taksonomi séjén anu henteu éléh kasohor dijieun ku Joseph Pitton de Tournefort (France, 1656–1708). Ieu karyana taun 1700, Institutiones Rei Herbariae, kaasup leuwih ti 9000 spésiés 698 genera, nu langsung mangaruhan Linnaeus, sakumaha éta téks anjeunna dipaké salaku murid ngora.
+
+
+=== Mangsa Linnaean ===
+
+Ahli botani Swedia Carl Linnaeus (1707–1778) ushered in a new era of taxonomy. With his major works Systema Naturae 1st Edition in 1735, Spésiés Plantarum dina taun  1753, and Systema Naturae 10th Edition, anjeunna ngarévolusi taksonomi modern. Karya-karyana ngalaksanakeun sistem tata ngaran binomial standar pikeun spésiés sato jeung tutuwuhan, anu geus kabukti ngajadi solusi ampuh pikeun literatur taksonomi anu kacau jeung henteu puguh éntép sureuhna. Anjeunna henteu ngan nepangkeun standar kelas, order, genus, and spésiés, tapi ogé ngamungkinkeun pikeun ngaidentipikasi pepelakan sareng sasatoan tina bukuna, kalayan ngagunakeun sabagean leutik tina kembang (dipikawanoh salaku Linnaean system).
+Taxonomists tutuwuhan jeung sasatoan regard Linnaeus' dianggo salaku "titik mimiti" pikeun ngaran anu loyog (at 1753 and 1758 respectively). Ngaran anu diterbitkeun sateuacan tanggal ieu disebut "pra-Linnaean", tur teu dianggap valid (iwal spiders diterbitkeun dina Svenska Spindlar. ). Malah ngaran taksonomi dipedalkeun ku Linnaeus sorangan saméméh tanggal ieu dianggap pra-Linnaean.
+
+
+=== Jaman taksonomi digital ===
+Taksonomi modern dipangaruhan pisan ku téknologi sapertos DNA sequencing, bioinformatics, databases, sareng imaging.
+
+
+== Sistem klasifikasi modern ==
+
+Hiji pola pikeun golongan anu nyayang sajeroning golongan anu geus ditangtukeun ku Linnaeus' klasifikasi tina  tutuwukan tur  sasatoan, sarta pola ieu mimiti jadi salaku gambaran dendrograms  pikeun sasatoan sarta  tutuwuhan karanaa lajeng dugi ka ahir abad ka 18, ogé saméméh Charles Darwin's On the Origin of Species dipedalkeun. Hiji pola  "Natural System" teu merlukeun prosés generating
+, saperti dina evolusi, tapi bisa waé geus kasawang, mereun pamikir transmutationist. Diantara karya mimiti neuleuman tina pamikiran transmutation of species anu tayalian  Zoonomia dina taun 1796 ku Erasmus Darwin ( akina Charles Darwin's), jeung  Jean-Baptiste Lamarck's Philosophie zoologique dina taun 1809. Hiji ideu anu geus dipopulerkeun dina  dunya Anglophone sanajan loba anu sipatna  spekulatif tapi loba ogé anu maraca Vestiges of the Natural History of Creation, dipedalkeun sacara anonim  ku Robert Chambers in 1844.
+Ayana téori Darwin, hiji anu disaluyuan kalawan gancang ditarima tayalian hiji klasifikasi kudu numutkeun kana prinsip  Darwinian katangtuan umum. Tangkal kahirupan  élmu pangaweruh Répréséntasi jadi populér dina karya ilmiah, kalawan grup fosil dipikawanoh diasupkeun.  Salah sahiji grup modéren munggaran anu dihijikeun ka karuhun fosil nyaéta manuk. Ngagunakeun fosil lajeng anyar kapanggih tina Archaeopteryx jeung Hesperornis, Thomas Henry Huxley Nyebutkeun yén maranéhna geus mekar tina dinosaurus, hiji group resmi anu dingaranan ku Richard Owen taun  1842. Pedaran anu dihasilkeun, éta dinosaurus "nimbulkeun" atawa mahluk "karuhun ti" manuk, mangrupa ciri penting tina pamikiran taksonomi évolusionér. Beuki loba grup fosil anu kapanggih sarta bisa dipikanyaho sahenteuna dina akhir abad ka 19 jeung mimiti abad 20, palaeontologists digawé pikeun mikanyaho sajarahna sasatoan ngaliwatan umur ku cara ngaitkeun babarengan jeung  grup anu geus dipikawanoh. kitu deui sintésis évolusionér modern ti mimiti 1940-an, dasarna pamahaman modérn ngeunaan évolusi tina grup utama di éta tempat. Salaku taksonomi évolusionér dumasar kana jajaran taksonomi Linnaean, dua istilah anu sakitu legana ditukeurkeun dina pamakéan modern.
+Métode kladistik muncul ti taun 1960-an. Dina taun 1958, Julian Huxley ngagunakeun istilah clade. Engké, dina 1960, Cain jeung Harrison ngawanohkeun istilah "cladistic". Fitur anu penting nyaéta nyusun taksa dina hirarki tangkal évolusionér, kalawan desideratum yén sakabéh taksa ngaranna téh monophyletic. Hiji takson disebut monophyletic lamun ngawengku sakabéh turunan tina wangun karuhun. Grup anu ngagaduhan grup turunan dikaluarkeun tina aranjeunna disebut paraphyletic, sedengkeun grup nu ngawakilan leuwih ti hiji cabang tina tangkal kahirupan disebut polyphyletic. Grup monophyletic dipikawanoh tur didiagnosis dumasar kana synapomorphies, kaayaan karakter turunan dibagikeun.
+Klasifikasi kladistik taksonomi Linnean cocog sareng  Kodeu tradisional ‘’ Nomenklatur Zoologis ‘’ jeung nomenklatur botani, ka extent tangtu. Sistem tata ngaran alternatip, nyaéta  PhyloCod/ Kode Internasional Nomenklatur Filogénétik atawa PhyloCode geus diajukeun, nu ngatur ngaran formal klad. Jajaran Linnaean téh pilihan jeung teu boga status resmi dina PhyloCode, nu dimaksudkeun pikeun hirup babarengan jeung kode ayeuna, dumasar-rank.. Samentara popularitas nomenklatur filogenetik parantos ningkat sacara stabil dina sababaraha dekade katukang,  tetep katingalna seuseueurna ahli sistematis antukna  ngadopsi PhyloCode atanapi neraskeun ngagunakeun sistem tatangaran kiwari anu parantos dianggo (sareng dirobih, tapi panginten henteu sakumaha anu dipikahoyong ku sababaraha sistematis) sahenteuna leuwih 250 taun.
+
+
+=== Karajaan jeung domain ===
+
+Sateuacan kapanggihna Carl Linnaeus (Botanist) tutuwuhan jeung sasatoan dianggap Karajaan anu misah.Citakan:Unreliable source? Linnaeus ngagunakeun ieu salaku pangkat luhur, ngabagi dunya fisik kana sayur, karajaan sato jeung mineral. Salaku kamajuan dina mikroskop ngajadikeun klasifikasi mikroorganismeu, jumlah karajaan ngaronjat, sistem lima jeung genep karajaan anu paling umum.
+Domain mangrupa grup nu kawilang anyar. Mimiti diajukeun dina 1977, Carl Woese sistem tilu domain sacara umum teu ditarima nepi ka engké.Salah sahiji ciri utama metode tilu domain nyaéta pamisahan Archaea sareng Baktéri, anu sateuacana dikelompokkeun kana karajaan tunggal Baktéri (hiji karajaan anu sok disebut Monera), kalawan Eukariota pikeun sakabéh organisme anu sélna ngandung inti. Sajumlah leutik élmuwan kalebet karajaan kagenep, Archaea, tapi henteu nampi metode domain.
+Thomas Cavalier-Smith, anu dipedalkeun sacara éksténsif ngeunaan klasifikasi protista, taun 2002 ngusulkeun yén Neomura, clade anu ngahijikeun Archaea jeung Eucarya, bakal mekar tina Baktéri, langkung tepatna tina Actinomycetota. Klasifikasi na 2004 nganggap archaeobacteria salaku bagian tina subkingdom karajaan Baktéri, nyaéta, anjeunna nampik sistem tilu domain sagemblengna. Stefan Luketa di 2012 ngusulkeun lima sistem "dominion", nambahan Prionobiota (asélular jeung tanpa asam nukléat) jeung Virusobiota (asélular tapi ' 'kalayan asam nukléat) kana tilu domain tradisional.
+
+
+=== Klasifikasi komprehensif panganyarna ===
+Klasifikasi lengkep; parsial aya pikeun loba grup individu organismeu sarta dirévisi jeung diganti sakumaha informasi anyar anu sadia; kumaha ogé, kompréhénsif, diterbitkeun lumaku sawaréh atawa sagemblengna; conto panganyarna nyaéta jeung sajabana., 2012 jeung 2019, nu ngawengku eukariot wungkul kalawan tekenan kana protista, sarta Ruggiero jeung sajabana. taun 2015, ngawengku boh eukariot jeung prokariots kana pangkat Orde, sanajan duanana ngaluarkeun wawakil fosil. Kompilasi anu misah (Ruggiero, 2014) nambahkeun  taksa anu masih aya pikeun pangkat Kulawarga. Lain, Pangobatan dumasar basis data kalebet Ensiklopedia Kahirupan, éta Fasilitas Émbaran Keanekaragaman Hayati Global, database taksonomi NCBI, Pendaptaran Interim Genera Kelautan sareng Nonmarine, éta Buka Tangkal Kahirupan, jeung Katalog Kahirupan. Database Paleobiologi mangrupa sumber pikeun fosil.
+
+
+== Aplikasi ==
+Taksonomi biologis mangrupa sub-disiplin biologi, sareng umumna dipraktékkeun ku ahli biologi anu katelah "ahli taksonomi", sanajan antusias naturalis ogé sering kalibet dina publikasi taksa anyar. Kusabab taksonomi boga tujuan pikeun ngajelaskeun tur ngatur kahirupan, karya anu dilakukeun ku ahli taksonomi penting pisan pikeun ulikan ngeunaan biodiversitas jeung hasil widang biologi konservasi.
+
+
+=== Klasifikasi organismeu ===
+
+Klasifikasi biologis mangrupakeun komponén kritis prosés taksonomi. Hasilna, éta informs pamaké sakumaha naon baraya tina takson nu dihipotesiskeun. Klasifikasi biologis ngagunakeun pangkat taksonomi, kaasup antara séjén (urutan ti paling inklusif ka nu henteu inklusif): Domain, Karajaan, Filum, Kelas, Urutan, Kulawarga, Genus, Spésiés, jeung Galur.Citakan:NoteTag
+
+
+=== Katerangan taksonomi ===
+
+Pedaran takson  ieu di encapsulated ku déskripsi atawa diagnosis na atawa gabungan ku duanana. Henteu aya aturan anu diatur anu ngatur definisi taksa, tapi ngaran jeung publikasi taksa anyar diatur ku susunan aturan. Dina zoologi, nomenklatur pikeun jajaran anu leuwih ilahar dipaké (superfamili nepi ka subspésiés), diatur ku Kode Internasional Nomenklatur Zoologis (Kode ICZN). Dina widang phycology, mycology, jeung botani, ngaran taksa diatur ku Kode Nomenklatur Internasional pikeun ganggang, fungi, jeung tutuwuhan (ICN).
+Katerangan awal hiji takson ngalibatkeun lima sarat utama:
+
+Taksonna kudu dibéré ngaran dumasar kana 26 hurup alfabét Latin (binomial pikeun spésiés anyar, atawa uninomial pikeun jajaran séjén).
+Ngaranna kudu unik (nyaéta lain homonim).
+Katerangan kudu dumasar kana sakurang-kurangna hiji spésimén.
+Éta kedah kalebet pernyataan ngeunaan atribut anu cocog pikeun ngajelaskeun (ngahartikeun) takson atanapi ngabédakeun tina takson anu sanés. (diagnosis, Kode ICZN, Pasal 13.1.1, ICN, Pasal 38, anu tiasa atanapi henteu dumasar kana morfologi). Kadua kodeu ngahaja misahkeun nangtukeun eusi takson (circumscription) tina nangtukeun ngaranna.
+Opat sarat munggaran ieu kedah dipedalkeun dina karya anu tiasa dicandak dina sababaraha salinan anu sami, salaku catetan ilmiah anu permanén.
+Nanging, sering langkung seueur inpormasi anu kalebet, sapertos rentang geografis takson, catetan ékologis, kimia, kabiasaan, jsb Kumaha panaluntik anjog di taksa maranéhna béda-béda: gumantung kana data anu sadia, jeung sumber, métode béda ti basajan kuantitatif atawa kualitatif babandingan fitur-fitur anu aya, pikeun ngajéntrékeun analisa komputer tina jumlah badag data DNA.
+
+
+=== Cutatan pangarang ===
+
+"Otoritas" tiasa ditempatkeun saatos nami ilmiah. Wewenang nyaéta ngaran élmuwan atawa élmuwan anu mimiti sah medalkeun ngaran éta. Contona, dina taun 1758 Linnaeus méré ngaran ilmiahna gajah Asia; Elephas maximus, jadi ngaran ieu sakapeung ditulis jadi "Elephas maximus Linnaeus, 1758". Ngaran pangarang mindeng disingget: singketan L., keur Linnaeus, ilahar dipaké. Dina botani, kanyataanna, aya daptar singketan standar anu diatur (tingali daptar ahli botani dumasar singgetan pangarang). Sistem pikeun nangtukeun otoritas rada béda antara botani jeung zoologi. Sanajan kitu, éta standar yén lamun genus spésiés geus robah ti déskripsi aslina, ngaran otoritas aslina urang disimpen dina kurung.
+
+
+== Pénétika ==
+
+Dina phenetics, ogé katelah taximetrics, atawa taksonomi numerik, organismeu digolongkeun dumasar kana kasaruaan sakabéh, paduli filogeni atawa hubungan évolusionér maranéhanana. Hasilna dina ukuran hypergeometric "jarak" antara taksa. Métode fénétik geus kawilang jarang di jaman modéren, lolobana diganti ku analisis kladistik, sabab métode fénétik teu ngabédakeun sipat karuhun (atawa plesiomorph ic) tina turunan babarengan (atawa apomorphic). ) ciri. Sanajan kitu, métode phenetic tangtu, kayaning tatangga gabung, tetep, salaku estimators gancang tina hubungan lamun métode leuwih canggih (saperti Bayesian inferensi) teuing komputasi mahal.
+
+
+== Basis data ==
+
+Taksonomi modern ngagunakeun téknologi database pikeun milarian sareng katalog klasifikasi sareng dokuméntasina. Bari euweuh database ilahar dipaké, aya pangkalan data anu komprehensif sapertos Katalog Kahirupan, nu tos nyoba ngadaptar unggal spésiés. Katalog didaptarkeun 1,64 juta spésiés pikeun sadaya karajaan , ngaku liputan leuwih ti tilu-suku tina estimasi spésiés dipikawanoh pikeun élmu modern.
+
+
+== Tempo ogé ==
+
+
+== Dicutat tina ==
+
+
+== Bibliografi ==
+
+
+== Tutumbu ka luar ==
+What is taxonomy? at the Natural History Museum London
+Taxonomy at NCBI the National Center for Biotechnology Information
+Taxonomy at UniProt the Universal Protein Resource
+ITIS the Integrated Taxonomic Information System
+CETaF the Consortium of European Taxonomic Facilities
+Wikispecies free species directory
+Biological classification. Archived 13 Agustus 2020 di Wayback Machine
+Citakan:Branches of biology
