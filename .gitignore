@@ -23,9 +23,11 @@ datasets/rarangken_angka_collection/_demo_*.png
 # Legacy/superseded baseline dataset images (manifest kept)
 training/baseline_data/images/
 
-# Model checkpoints -- large binary .pt files, regenerable by rerunning
-# training/train_crnn.py against the (locally available) image data.
-training/checkpoints/
+# Model checkpoints: tracked, not ignored. Each is only ~9-13MB (small
+# enough for a normal git push, no LFS needed) and regenerating them all
+# would cost many GPU-hours -- worth the repo-size trade-off to just keep
+# them, especially so a fresh clone (new device, no local training
+# history) has the actual best-known checkpoints on hand immediately.
 
 # TensorBoard event files and ad-hoc run logs -- ephemeral, regenerated
 # every run, not meaningful outside the machine that produced them.
