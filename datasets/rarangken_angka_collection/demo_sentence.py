@@ -86,11 +86,19 @@ def tight_ink(img_L):
     return img_L.crop(bbox), bbox
 
 
-def paste_mark(canvas, bx, by, bw, bh, base_stroke, rarangken_class, offsets):
+def paste_mark(canvas, bx, by, bw, bh, base_stroke, rarangken_class, offsets, rotate_deg=0.0):
     """Paste one real rarangken crop onto `canvas`, positioned relative to
     the base ink's box (bx,by,bw,bh) using a measured (dx_frac, dy_frac,
     scale) offset, stroke-width-matched to base_stroke. Returns the
-    (possibly grown) canvas. Shared by single- and two-mark syllables."""
+    (possibly grown) canvas. Shared by single- and two-mark syllables.
+
+    rotate_deg: optional small rotation applied to the mark AFTER resize
+    (default 0.0 = no rotation, preserving old behavior for any caller
+    that doesn't pass it -- e.g. demo_sentence.py's own fixed-offset use).
+    Positioning still uses the pre-rotation target_w/target_h center, then
+    snaps to the rotated (expanded) image's actual size, so the mark stays
+    centered on the same intended spot rather than drifting toward one
+    corner."""
     dx_frac, dy_frac, scale = offsets
     mark_img = load_random_crop(rarangken_class)
     mark_ink, _ = tight_ink(mark_img)
@@ -126,6 +134,15 @@ def paste_mark(canvas, bx, by, bw, bh, base_stroke, rarangken_class, offsets):
     base_cx, base_cy = bx + bw / 2, by + bh / 2
     mark_cx = base_cx + dx_frac * bw
     mark_cy = base_cy + dy_frac * bh
+
+    if rotate_deg:
+        # expand=True grows the canvas to fit the rotated corners -- resize
+        # target_w/target_h to the grown size BEFORE computing px/py, so the
+        # mark's center stays at (mark_cx, mark_cy) instead of drifting
+        # toward the pre-rotation top-left corner.
+        mark_resized = mark_resized.rotate(rotate_deg, expand=True, fillcolor=255, resample=Image.BICUBIC)
+        target_w, target_h = mark_resized.size
+
     px = int(mark_cx - target_w / 2)
     py = int(mark_cy - target_h / 2)
 

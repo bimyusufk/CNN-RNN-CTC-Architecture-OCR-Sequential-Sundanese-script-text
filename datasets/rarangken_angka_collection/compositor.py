@@ -29,6 +29,7 @@ Usage:
     img = render_text("ᮊᮥᮙᮠ ᮓᮙᮀ")   # -> PIL 'L' image, or None if blank
 """
 import os
+import random
 
 import uharfbuzz as hb
 import freetype
@@ -41,6 +42,62 @@ from demo_sentence import (
 )
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# --- per-mark positional augmentation (synthesis-time, not on-the-fly) ----
+# Small random perturbation of each rarangken's measured (dx_frac, dy_frac,
+# scale) offset + a small rotation, applied fresh every render (unlike the
+# cached base offsets, which stay fixed per base+mark combination). Purpose:
+# real handwriting doesn't attach marks at one exact fixed spot -- the
+# measured-from-font offsets give a realistic but rigid target, so every
+# instance of e.g. "ka+u" currently looks identically positioned. Bounds
+# are deliberately small relative to each syllable's own working canvas
+# (canvas_w/h = ~2-3x the base's own size, see make_syllable_generic) --
+# there is ~0.5-1.0x bw/bh of headroom before a mark would even approach
+# its own canvas edge, let alone the neighboring syllable (GAP_SYLLABLE=6px
+# only matters after tight-cropping). The binding constraint is NOT
+# neighbor-bleeding (lots of headroom there) but the mark staying legibly
+# attached to (and identifiable as) itself -- kept conservative for that
+# reason, well inside the safe margin above.
+MARK_JITTER_ENABLED = True
+MARK_JITTER_POS = 0.04       # +/- fraction of base bw/bh added to dx_frac/dy_frac
+MARK_JITTER_SCALE = 0.06     # +/- fractional scale multiplier (like augment.py's whole-image 0.92-1.08, slightly tighter)
+MARK_JITTER_ROTATE_DEG = 3.0 # +/- degrees; new capability, kept <= the whole-image cap since a lone mark's shape identity is more sensitive to rotation than a full line
+
+
+# --- inter-syllable / inter-word spacing jitter (synthesis-time) ---------
+# Complements the mark-position jitter above: GAP_SYLLABLE/GAP_WORD are
+# otherwise fixed (6px / 40px, at SYLLABLE_H=260 working resolution) for
+# EVERY gap in EVERY sentence -- real handwriting doesn't space characters
+# with pixel-perfect uniformity. Each gap is jittered independently (not
+# one draw applied uniformly across the whole sentence), so spacing varies
+# gap-to-gap the way real handwriting does. Bounds keep the two gap KINDS
+# clearly separated -- max jittered syllable-gap (9px) stays well below
+# min jittered word-gap (28px) -- so a syllable gap can never be mistaken
+# for a word gap or vice versa.
+GAP_JITTER_ENABLED = True
+GAP_SYLLABLE_JITTER_FRAC = 0.5   # 6px -> 3-9px
+GAP_WORD_JITTER_FRAC = 0.3       # 40px -> 28-52px
+
+
+def _jittered_gap(base_gap, frac):
+    if not GAP_JITTER_ENABLED:
+        return base_gap
+    return base_gap * random.uniform(1 - frac, 1 + frac)
+
+
+def _jitter_mark_placement(offset):
+    """offset: (dx_frac, dy_frac, scale) measured from font geometry.
+    Returns (jittered_offset, rotate_deg) -- disabled (returns offset
+    unchanged, rotate_deg=0.0) via MARK_JITTER_ENABLED for easy rollback
+    during visual validation."""
+    if not MARK_JITTER_ENABLED:
+        return offset, 0.0
+    dx_frac, dy_frac, scale = offset
+    dx_frac = dx_frac + random.uniform(-MARK_JITTER_POS, MARK_JITTER_POS)
+    dy_frac = dy_frac + random.uniform(-MARK_JITTER_POS, MARK_JITTER_POS)
+    scale = scale * random.uniform(1 - MARK_JITTER_SCALE, 1 + MARK_JITTER_SCALE)
+    rotate_deg = random.uniform(-MARK_JITTER_ROTATE_DEG, MARK_JITTER_ROTATE_DEG)
+    return (dx_frac, dy_frac, scale), rotate_deg
 
 # --- Unicode codepoint -> local dataset class name ------------------------
 
@@ -236,7 +293,9 @@ def make_syllable_generic(base_cp, mark_cps):
         offsets = get_mark_offsets(base_cp, mark_cps)
         for mark_cp, offset in zip(mark_cps, offsets):
             mark_class = RARANGKEN[mark_cp]
-            canvas, bx, by = paste_mark(canvas, bx, by, bw, bh, base_stroke, mark_class, offset)
+            jittered_offset, rotate_deg = _jitter_mark_placement(offset)
+            canvas, bx, by = paste_mark(canvas, bx, by, bw, bh, base_stroke, mark_class,
+                                         jittered_offset, rotate_deg=rotate_deg)
 
     tight, _ = tight_ink(canvas)
     scale_to_h = SYLLABLE_H / tight.height
@@ -287,20 +346,24 @@ def render_text(text):
         syll_imgs = [im for im, _ in syllables_in_word]
         labels.extend(lbl for _, lbl in syllables_in_word)
 
-        total_w = sum(im.width for im in syll_imgs) + GAP_SYLLABLE * (len(syll_imgs) - 1)
+        syll_gaps = [round(_jittered_gap(GAP_SYLLABLE, GAP_SYLLABLE_JITTER_FRAC))
+                     for _ in range(len(syll_imgs) - 1)]
+        total_w = sum(im.width for im in syll_imgs) + sum(syll_gaps)
         row = Image.new("L", (total_w, SYLLABLE_H), 255)
         x = 0
-        for im in syll_imgs:
+        for i, im in enumerate(syll_imgs):
             row.paste(im, (x, 0))
-            x += im.width + GAP_SYLLABLE
+            x += im.width + (syll_gaps[i] if i < len(syll_gaps) else 0)
         word_imgs.append(row)
 
-    total_w = sum(im.width for im in word_imgs) + GAP_WORD * (len(word_imgs) - 1)
+    word_gaps = [round(_jittered_gap(GAP_WORD, GAP_WORD_JITTER_FRAC))
+                 for _ in range(len(word_imgs) - 1)]
+    total_w = sum(im.width for im in word_imgs) + sum(word_gaps)
     sentence = Image.new("L", (total_w, SYLLABLE_H), 255)
     x = 0
-    for im in word_imgs:
+    for i, im in enumerate(word_imgs):
         sentence.paste(im, (x, 0))
-        x += im.width + GAP_WORD
+        x += im.width + (word_gaps[i] if i < len(word_gaps) else 0)
 
     # 5px white margin on all sides -- every syllable upstream is cropped
     # tight-to-ink (tight_ink, no margin), so without this the composited
