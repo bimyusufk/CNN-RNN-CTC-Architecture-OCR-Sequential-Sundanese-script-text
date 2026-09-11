@@ -1,0 +1,32 @@
+{
+ "unseen_in_train": {
+  "match": 0,
+  "error": 9,
+  "total": 9,
+  "accuracy": 0.0
+ },
+ "very_rare_<10": {
+  "match": 9,
+  "error": 0,
+  "total": 9,
+  "accuracy": 1.0
+ },
+ "rare_10-99": {
+  "match": 380,
+  "error": 16,
+  "total": 396,
+  "accuracy": 0.9595959595959596
+ },
+ "moderate_100-999": {
+  "match": 3025,
+  "error": 39,
+  "total": 3064,
+  "accuracy": 0.9872715404699739
+ },
+ "common_1000+": {
+  "match": 32542,
+  "error": 159,
+  "total": 32701,
+  "accuracy": 0.9951377633711507
+ }
+}

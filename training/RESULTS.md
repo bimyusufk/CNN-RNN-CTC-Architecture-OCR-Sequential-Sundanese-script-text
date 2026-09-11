@@ -45,3 +45,61 @@ Data: 801 kalimat NusaAksara (filtered), split 640/80/81 kalimat (train/val/test
 - Seluruh data latih synthetic (karakter asli, disusun algoritmik) -- generalisasi ke dokumen tulisan tangan Sunda sungguhan belum diuji di sini, di luar scope run ini.
 - OOV terhadap vocabulary train (diukur sebelumnya): val 0.9% instans simbol, test 1.8% -- sebagian kecil kesalahan CER pada test TIDAK bisa dihindari model manapun.
 - Vocabulary CTC (349 simbol) diturunkan murni dari 640 kalimat train, bukan dienumerasi.
+
+---
+
+# Eksperimen 2 (2026-09): korpus 7000+ kalimat + LR scheduler + aux decoder + augmentasi
+
+Setelah korpus diperluas lewat terjemahan mesin (NLLB) dari 50 artikel sejarah
+(train: 5840 kalimat / 10320 citra, val: 80/240, test: 81/243), dan setelah
+menambahkan LR scheduler (warmup+cosine), auxiliary decoder, dan augmentasi
+on-the-fly -- pertanyaan yang diuji: **apakah width=0.50 masih pilihan
+terbaik, atau korpus yang jauh lebih besar sekarang cukup untuk membuat model
+lebih lebar unggul** (hipotesis: U-shape lama di Eksperimen 1 disebabkan
+overfitting tanpa LR scheduler, bukan batas kapasitas sungguhan)?
+
+## Hasil
+
+| Width | Parameter | Epoch berhenti | Epoch terbaik | Test CER | Test WER | Test Exact |
+|---|---|---|---|---|---|---|
+| 0.50 | 2,646,345 | 120 (patience dimatikan, epochs=120) | 50 | **0.0105** | 0.0244 | 0.9177 |
+| 1.00 | 2,957,801 | 55 (early-stop, patience=20) | 35 | 0.0131 | 0.0257 | **0.9218** |
+
+## Interpretasi
+
+**Hipotesis "korpus lebih besar akan membuat width lebih besar unggul" --
+TIDAK terbukti.** width=1.00 (12% parameter lebih banyak) hasilnya SEDIKIT
+LEBIH BURUK di CER dan WER dibanding width=0.50, cuma menang tipis di exact
+match (92.18% vs 91.77% -- beda ~1 kalimat dari 243, kemungkinan noise).
+Ini mereplikasi arah temuan Eksperimen 1 (U-shape, 0.50 kompetitif) --
+tapi kali ini di bawah kondisi training yang jauh lebih baik (LR scheduler
+aktif, tidak ada tanda overfit-destabilisasi di kedua run), jadi kesimpulannya
+lebih kuat: **ini kemungkinan bukan artefak kurangnya regularisasi seperti
+dugaan Eksperimen 1, tapi titik efisiensi kapasitas yang genuin untuk
+arsitektur CRNN ini pada tugas ini.** width=0.50 tetap pilihan Pareto yang
+masuk akal -- parameter lebih sedikit, CER/WER lebih baik.
+
+**Kedua run konvergen ke val CER minimum yang identik (0.0014)** di epoch
+berbeda (50 vs 35) -- kemungkinan ini adalah lantai CER terkecil yang bisa
+dicapai pada val set (240 citra), bukan kebetulan bermakna.
+
+**width=1.00 berhenti lebih awal secara sehat** (early stop epoch 55, terbaik
+epoch 35 -- patience=20 bekerja seperti dirancang), sementara width=0.50
+dijalankan penuh 120 epoch dengan patience dimatikan (dibiarkan sengaja untuk
+lihat kurva LR-decay penuh) -- lihat analisis plateau di bawah.
+
+## Apakah width=0.50 masih bisa membaik dengan training lebih lama?
+
+**Tidak, dengan skema training yang sama.** CTC loss (train) sudah 0.0000
+sejak ~epoch 100, LR sudah meluruh ke ~0 sejak ~epoch 110 (bagian dari desain
+cosine schedule -- bukan tanda kurang waktu), dan val CER epoch 81-120
+berosilasi datar di 0.0014-0.0057 tanpa tren membaik (mean 0.0027, stdev
+0.0011) -- dibanding epoch 21-50 yang jelas menurun tajam (mean 0.0087, stdev
+0.0175). Re-run dari nol dengan budget epoch lebih panjang kemungkinan tidak
+akan membantu juga, karena train loss sudah menyentuh lantai jauh sebelum
+epoch 120 (~epoch 50-60) -- bottleneck bukan waktu training, kemungkinan
+kapasitas arsitektur atau noise/ambiguitas intrinsik data sintetis.
+
+**Saran efisiensi untuk eksperimen berikutnya**: budget ~60-70 epoch dengan
+patience wajar (bukan dimatikan) sudah cukup -- menghemat ~separuh waktu
+wall-clock dibanding 120 epoch tanpa kehilangan kualitas hasil.
