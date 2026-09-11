@@ -1,0 +1,4 @@
+true (label sebenarnya, "beureum"): ['ᮘᮩ', 'ᮛᮩ', 'ᮙ᮪']
+pred (dibaca model): ['ᮙ', '᮹', 'ᮛᮤ', '᮴', 'ᮝᮥ']
+edit_distance: 5
+CER: 1.6667 (166.7%)

@@ -1,0 +1,11 @@
+checkpoint epoch=50 val_cer=0.0014
+n_timestep=17
+raw per-timestep argmax ids: [455, 0, 0, 0, 0, 680, 0, 0, 513, 0, 0, 0, 675, 0, 0, 584, 0]
+avg confidence: 0.8342
+n_symbols_decoded=5
+SYMBOLS: ᮙ ᮹ ᮛᮤ ᮴ ᮝᮥ
+  ᮙ  ['0x1b99']  ['SUNDANESE LETTER MA']
+  ᮹  ['0x1bb9']  ['SUNDANESE DIGIT NINE']
+  ᮛᮤ  ['0x1b9b', '0x1ba4']  ['SUNDANESE LETTER RA', 'SUNDANESE VOWEL SIGN PANGHULU']
+  ᮴  ['0x1bb4']  ['SUNDANESE DIGIT FOUR']
+  ᮝᮥ  ['0x1b9d', '0x1ba5']  ['SUNDANESE LETTER WA', 'SUNDANESE VOWEL SIGN PANYUKU']

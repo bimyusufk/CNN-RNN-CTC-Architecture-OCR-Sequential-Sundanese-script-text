@@ -1,0 +1,5 @@
+checkpoint epoch=21 val_cer=0.0018
+avg confidence: 0.9179
+PREDIKSI: ᮔ ᮛᮩ ᮙ᮪
+LABEL SEBENARNYA (beureum): ᮘᮩ ᮛᮩ ᮙ᮪
+CER: 0.3333 (33.3%)

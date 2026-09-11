@@ -1,0 +1,7 @@
+'<sp>' -> (pemisah kata)
+ᮒᮥᮀ  codepoints=['0x1b92', '0x1ba5', '0x1b80']  names=['SUNDANESE LETTER TA', 'SUNDANESE VOWEL SIGN PANYUKU', 'SUNDANESE SIGN PANYECEK']
+ᮋ᮪  codepoints=['0x1b8b', '0x1baa']  names=['SUNDANESE LETTER QA', 'SUNDANESE SIGN PAMAAEH']
+'<sp>' -> (pemisah kata)
+ᮒᮤ  codepoints=['0x1b92', '0x1ba4']  names=['SUNDANESE LETTER TA', 'SUNDANESE VOWEL SIGN PANGHULU']
+ᮙ᮪  codepoints=['0x1b99', '0x1baa']  names=['SUNDANESE LETTER MA', 'SUNDANESE SIGN PAMAAEH']
+᮴  codepoints=['0x1bb4']  names=['SUNDANESE DIGIT FOUR']

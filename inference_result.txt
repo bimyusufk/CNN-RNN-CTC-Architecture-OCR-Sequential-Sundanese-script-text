@@ -1,0 +1,7 @@
+checkpoint epoch=50 val_cer=0.0014
+n_timestep=44
+raw per-timestep argmax ids: [1, 0, 0, 0, 0, 0, 0, 247, 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 0, 0, 0, 0, 1, 1, 1, 242, 0, 0, 0, 0, 483, 0, 0, 0, 0, 675, 0, 0, 0, 0, 0, 0, 0, 0]
+avg confidence: 0.9418
+n_symbols_decoded=7
+SYMBOLS: <sp> ᮒᮥᮀ ᮋ᮪ <sp> ᮒᮤ ᮙ᮪ ᮴
+SYMBOLS_LIST: ["<sp>", "ᮒᮥᮀ", "ᮋ᮪", "<sp>", "ᮒᮤ", "ᮙ᮪", "᮴"]
