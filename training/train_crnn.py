@@ -72,6 +72,48 @@ def evaluate(model, loader, idx_to_symbol, device, max_batches=None):
     return {"cer": total_cer / n, "wer": total_wer / n, "exact_match": exact / n, "n": n}
 
 
+def class_balanced_aux_weights(manifest, symbol_to_idx, aux_vocab_size, beta=0.9999, max_weight=5.0):
+    """Class-Balanced Loss weights (Cui et al., CVPR 2019: "Class-Balanced
+    Loss Based on Effective Number of Samples") -- weight per class is
+    inverse to its "effective number" (1-beta^n)/(1-beta), not raw inverse
+    frequency, which over-corrects for classes seen only once or twice
+    (see CLASS_IMBALANCE_PLAN.md; raw inverse-count weighting on our
+    minimum-count-1 classes would produce weights differing by 60000x+
+    between rarest and most common symbol, which would destabilize
+    training far worse than it's meant to fix).
+
+    Only meaningful for the aux decoder's CrossEntropyLoss -- CTC doesn't
+    expose a native per-class weight hook (it operates over alignment
+    paths, not independent per-position targets), so this is the concrete
+    "adapt threshold-moving to loss-weighting via the aux decoder" item
+    from CLASS_IMBALANCE_PLAN.md point 3. clamp to max_weight so a
+    handful of count=1 classes can't dominate the gradient outright."""
+    counts = {}
+    for row in manifest:
+        if row["split"] != "train":
+            continue
+        for sym in row["label"].split(" "):
+            counts[sym] = counts.get(sym, 0) + 1
+
+    weight = torch.ones(aux_vocab_size, dtype=torch.float32)
+    for sym, idx in symbol_to_idx.items():
+        n = counts.get(sym, 0)
+        if n == 0:
+            continue  # unseen in train even after the split fix (shouldn't happen) -- leave at neutral 1.0
+        eff_num = (1 - beta ** n) / (1 - beta)
+        w = 1.0 / eff_num
+        aux_idx = idx + (AUX_SPECIAL_TOKENS - 1)
+        weight[aux_idx] = w
+
+    # normalize so the weighted loss stays on a comparable scale to the
+    # unweighted case (mean weight over REAL symbol classes == 1.0),
+    # then clamp
+    real_slice = weight[AUX_SPECIAL_TOKENS:]
+    real_slice /= real_slice.mean()
+    weight[AUX_SPECIAL_TOKENS:] = real_slice.clamp(max=max_weight)
+    return weight
+
+
 def make_lr_lambda(warmup_epochs, total_epochs):
     def lr_lambda(epoch):
         if epoch < warmup_epochs:
@@ -97,6 +139,16 @@ def main():
                      help="on-the-fly rotation/scale/elastic augmentation, train split only")
     ap.add_argument("--no-augment", dest="augment", action="store_false")
     ap.add_argument("--tag-suffix", type=str, default="")
+    ap.add_argument("--class-balanced-loss", dest="class_balanced_loss", action="store_true", default=True,
+                     help="weight aux decoder's CrossEntropyLoss by inverse effective-number-of-samples "
+                          "per symbol (Cui et al. 2019) -- see CLASS_IMBALANCE_PLAN.md")
+    ap.add_argument("--no-class-balanced-loss", dest="class_balanced_loss", action="store_false")
+    ap.add_argument("--cb-beta", type=float, default=0.9999, help="Class-Balanced Loss beta hyperparameter")
+    ap.add_argument("--init-from", type=str, default=None,
+                     help="path to a checkpoint .pt to initialize CRNN weights from (fine-tuning "
+                          "continuation) -- must match --width. Optimizer/LR schedule/aux decoder "
+                          "still start fresh (aux decoder weights aren't saved in checkpoints anyway, "
+                          "it's a training-only regularizer with no inference role).")
     args = ap.parse_args()
 
     os.makedirs(CKPT_DIR, exist_ok=True)
@@ -128,6 +180,40 @@ def main():
     model = CRNN(num_classes, width_mult=args.width).to(device)
     n_params = model.count_params()
 
+    if args.init_from:
+        init_ckpt = torch.load(args.init_from, map_location=device, weights_only=False)
+        if init_ckpt.get("width_mult") != args.width:
+            raise ValueError(f"--init-from checkpoint width_mult={init_ckpt.get('width_mult')} "
+                              f"does not match --width {args.width}")
+        ckpt_state = init_ckpt["model_state"]
+        own_state = model.state_dict()
+        # Vocab can grow between runs (a new source batch adds symbols
+        # never seen before) -- num_classes then differs from the
+        # checkpoint's, and ONLY the final fc layer's shape depends on
+        # num_classes (conv backbone + BiLSTM don't). Skip just that layer
+        # (left at its fresh random init) rather than failing the whole
+        # load -- standard practice when fine-tuning into an expanded
+        # output head. Any other unexpected shape mismatch still aborts,
+        # since that would indicate a real architecture mismatch, not this
+        # known/expected vocab-growth case.
+        skipped = []
+        to_load = {}
+        for k, v in ckpt_state.items():
+            if k in own_state and own_state[k].shape != v.shape:
+                skipped.append((k, tuple(v.shape), tuple(own_state[k].shape)))
+            else:
+                to_load[k] = v
+        unexpected_mismatch = [k for k, _, _ in skipped if not k.startswith("fc.")]
+        if unexpected_mismatch:
+            raise RuntimeError(f"--init-from: unexpected shape mismatch outside fc layer: {unexpected_mismatch}")
+        model.load_state_dict(to_load, strict=False)
+        print(f"[width={args.width}] initialized from {args.init_from} "
+              f"(epoch {init_ckpt.get('epoch')}, val_cer {init_ckpt.get('val_cer'):.4f})")
+        if skipped:
+            for k, old_shape, new_shape in skipped:
+                print(f"[width={args.width}]   skipped {k}: checkpoint {old_shape} vs current {new_shape} "
+                      f"(vocab grew -- kept fresh random init for this layer)")
+
     aux_decoder = None
     aux_params = 0
     if args.use_aux:
@@ -138,7 +224,15 @@ def main():
           + f"  device: {device}")
 
     ctc_criterion = nn.CTCLoss(blank=0, zero_infinity=True)
-    aux_criterion = nn.CrossEntropyLoss(ignore_index=AUX_PAD, label_smoothing=0.1) if aux_decoder else None
+    aux_weight_tensor = None
+    if aux_decoder and args.class_balanced_loss:
+        aux_weight_tensor = class_balanced_aux_weights(
+            manifest, symbol_to_idx, aux_vocab_size, beta=args.cb_beta).to(device)
+        print(f"[width={args.width}] class-balanced aux loss aktif (beta={args.cb_beta}, "
+              f"bobot simbol min={aux_weight_tensor[AUX_SPECIAL_TOKENS:].min():.2f} "
+              f"max={aux_weight_tensor[AUX_SPECIAL_TOKENS:].max():.2f})")
+    aux_criterion = (nn.CrossEntropyLoss(ignore_index=AUX_PAD, label_smoothing=0.1, weight=aux_weight_tensor)
+                      if aux_decoder else None)
 
     params = list(model.parameters()) + (list(aux_decoder.parameters()) if aux_decoder else [])
     optimizer = torch.optim.Adam(params, lr=args.lr)
